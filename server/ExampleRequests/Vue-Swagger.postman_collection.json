@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "42d13a60-6307-44d7-8ba4-e77fb739e8f1",
+		"name": "Vue-Swagger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/labels",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"labels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "foo label",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "red",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/labels/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"labels",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/labels/remove/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"labels",
+						"remove",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
