@@ -1,4 +1,4 @@
-# 10-vue-testing
+# VueSwaggerAPI
 
 > A Vue.js project
 
